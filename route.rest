@@ -1,0 +1,21 @@
+GET http://localhost:8000/task
+###
+GET http://localhost:8000/task/1
+###
+POST http://localhost:8000/task
+Content-Type: application/json
+
+{
+    "title": "Take out garbage",
+    "description": "Collect grabage and dump it outside"
+}
+###
+DELETE http://localhost:8000/task/3
+###
+PATCH http://localhost:8000/task/3
+Content-Type: application/json
+
+{
+    "title": "Take out trash",
+    "description": "Collect trash and dump it outside"
+}
